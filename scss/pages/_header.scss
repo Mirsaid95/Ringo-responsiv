@@ -1,0 +1,125 @@
+.header{
+    width: 100%;
+    padding: 20px 20px;
+
+    &__nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__lists{
+        display: none;
+    }
+    &__logo{
+        width: 20%;
+        img{
+            width: 100%;
+        }
+    }
+    &__apps{
+        display: none;
+    }
+    &__burger{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+        width: 30px;
+        height: 30px;
+        background-color: rgba(0, 128, 0, 0.774);
+        color: white;
+        border-radius: 10px;
+    }
+    
+
+}
+
+@media (min-width: 768px) {
+    .header{
+
+        &__nav{
+            width: 100%;
+            gap: 30px;
+        }
+        &__burger{
+            display: none;
+        }
+        &__logo{
+            width: 10%;
+            img{
+                width: 100%;
+            }
+        }
+
+        &__lists{
+            width: 50%;
+            // background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+            gap: 30px;
+            font-size: 12px;
+        }
+        &__link{
+            color: black;
+            &:hover{
+                color: blue;
+            }
+        }
+        &__apps{
+            width: 25%;
+            // background-color: red;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            white-space: nowrap;
+        }
+        &__app{
+            display: flex;
+            gap: 10px;
+            font-size: 14px;
+        }
+        &__num{
+            font-size: 13px;
+        }
+    }
+}
+@media (min-width: 1024px) {
+    .header{
+        padding: 20px 80px;
+        
+        &__link{
+            font-size: 18px;
+        }
+        &__app{
+            font-size: 18px;
+            .fa-brands{color: rgba(174, 123, 60, 1);
+            }
+        }
+        &__num{
+            font-size: 18px;
+            color: rgba(61, 74, 57, 1);
+        }
+    }
+}
+@media (min-width: 1440px) {
+    .header{
+        padding: 20px 120px;
+
+        &__link{
+            font-size: 20px;
+        }
+        &__app{
+            font-size: 20px;
+            .fa-brands{color: rgba(174, 123, 60, 1);
+            }
+        }
+        &__num{
+            font-size: 20px;
+            color: rgba(61, 74, 57, 1);
+        }
+    }
+}
