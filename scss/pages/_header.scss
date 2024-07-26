@@ -1,12 +1,18 @@
 .header{
     width: 100%;
     padding: 20px 20px;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    background-color: white;
 
     &__nav{
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: space-between;
+            
+       
     }
     &__lists{
         display: none;

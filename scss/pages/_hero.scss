@@ -1,0 +1,154 @@
+.head {
+    width: 100%;
+    height: 50vh;
+    padding: 80px 20px;
+    background-image: url("../../image/tv-cabinet-modern-living-room-with-armchair-plant-dark-marble-wall-3d-rendering\ 1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+
+    &__items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    &__text{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 15px;
+
+    }
+
+    &__title{
+        font-weight: 700;
+        color: white;
+    }
+
+    &__list{
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 20px;
+    }
+
+    &__btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 140px;
+        height: 35px;
+        padding: 5px;
+        white-space: nowrap;
+        border: none;
+        background-color: rgba(174, 123, 60, 1);
+        color: white;
+        font-weight: 600;
+        border-radius: 5px;
+
+        &:hover {
+            transform: scale(1.2);
+            box-shadow: 1px 1px 3px orangered;
+        }
+    }
+
+    &__icon-num {
+        width: 100%;
+        // height: 70px;
+        position: absolute;
+        top: 200px;
+        left: 0;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        background-color: rgba(0, 0, 0, 0.068);
+        border-top: 2px solid rgba(255, 255, 255, 0.411);
+    }   
+
+    &__nums {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__num {
+        width: 30px;
+        height: 30px;
+        border: 1px solid;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: rgb(255, 255, 255);
+
+        &:hover {
+            color: orange;
+        }
+
+    }
+
+    &__left-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+
+        .fa-solid:hover{
+            color: orange;
+        }
+    }
+}
+
+@media (min-width: 578px) {
+    .head {
+        width: 100%;
+        height: 50vh;
+
+        &__items {
+            width: 100%;
+            padding-top: 30px;
+        }
+        &__icon-num{
+            top: 430px;
+        }
+        &__title{
+            font-size: 35px;
+            width: 50%;
+        }
+        &__list{
+            font-size: 20px;
+            line-height: 25px;
+            font-weight: 400;
+            color: rgba(0, 0, 0, 0.587);
+        }
+
+        &__btn{
+            font-size: 20px;
+            width: 230px;
+            height: 50px;
+            padding: 20px;
+            font-weight: 400;
+            
+        }
+
+
+
+    }
+}
+
+@media (min-width: 768px) {
+    .head{
+        height: 60vh;
+
+        &__icon-num{
+            top: 490px;
+            height: 60px;
+            background-color: orange;
+        }
+    }
+}

@@ -1,0 +1,116 @@
+.desing {
+    width: 100%;
+    padding-top: 50px;
+
+    &__items {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    &__cards {
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto-fill, minmax(350px, 1fr);
+        align-items: center;
+        gap: 20px;
+    }
+
+    &__image {
+        width: 100%;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__info {
+        font-size: 18px;
+        font-weight: 400;
+        color: rgba(61, 74, 57, 1);
+        white-space: nowrap;
+    }
+
+    &__num {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.507);
+    }
+
+    &__card {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        // padding: 5px;
+        // border-left: 2px solid rgba(0, 0, 0, 0.288);
+    }
+}
+
+@media (min-width: 578px) {
+    .desing {
+        &__items {
+            gap: 30px;
+        }
+
+        &__cards {
+            grid-template-columns: repeat(2, 1fr);
+            
+        }
+
+        &__image {
+            width: 100%;
+
+            img {
+                width: 100%;
+
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .desing{
+
+        &__items{
+            gap: 40px;
+        }
+        &__title{
+            font-size: 28px;
+        }
+        &__info{
+            font-weight: 700;
+        }
+
+        &__cards {
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+    }    
+}
+
+@media (min-width: 1024px) {
+    .desing{
+
+        &__title{
+            font-size: 48px;
+        }
+
+        &__info{
+            font-size: 24px;
+        }
+    }
+}
